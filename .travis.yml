@@ -1,0 +1,25 @@
+language: c
+
+compiler: gcc
+
+env:
+  matrix:
+    - BUILD=x86_64
+    - BUILD=x86
+    - BUILD=mingw32
+
+install:
+  - ./install-deps-${BUILD}.sh
+
+script:
+  - ./make-${BUILD}.sh
+
+cache:
+  - apt
+
+notifications:
+  email:
+    recipients:
+    - danielepantaleone@me.com
+    on_success: change
+    on_failure: change
