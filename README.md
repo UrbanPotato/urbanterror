@@ -15,7 +15,7 @@ videogame Urban Terror 4.x serie (http://www.urbanterror.info).
     - `sudo apt-get install build-essential libsdl1.2-dev libxxf86vm-dev`
     - `sudo apt-get install libc6-dev-i386 libxxf86vm-dev mesa-common-dev`
 * Switch to the `scripts` directory
-* Run either `make-x86.sh` or `make-x86_64.sh`
+* Run either or `make-x86_64.sh` WARNING 32 BIT DOES NOT BUILD ON RECENT COMPILERS! 
 
 ### *Windows (cross-compile)*
 
@@ -24,7 +24,7 @@ videogame Urban Terror 4.x serie (http://www.urbanterror.info).
     - `sudo apt-get install libsdl1.2-dev libxxf86vm-dev libc6-dev-i386`
     - `sudo apt-get install mingw-w64 gcc-mingw-w64-base gcc-mingw-w64 binutils-mingw-w64`
 * Switch to the `scripts` directory
-* Run `make-mingw32.sh`
+* Run `make-mingw32.sh` (use minigw < 4.7) 
 
 ## Addons & Improvements
 
@@ -47,7 +47,7 @@ videogame Urban Terror 4.x serie (http://www.urbanterror.info).
 * Replaced auth ban message with something understandable
 * Unlocked `sv_fps` cvar from game module constraint
 * Use of the new pure list system by default: removes compatibility with Q3A clients
-
+* Enforce Sv_minrate and sv_maxrate
 ### *Client*
 
 * Correctly draw new game module color codes in console
