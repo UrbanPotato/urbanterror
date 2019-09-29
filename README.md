@@ -57,7 +57,7 @@ videogame Urban Terror 4.x serie (http://www.urbanterror.info).
 * Fixed linux SDL gamma bug using XF86
 * Improved in-game console
 * Improved windows dedicated console readability
-* Unlock `snaps` cvar from game module constraint
+* Removed Snaps command so that clients always run at the correct rate for the desired sv_fps no client modifcations nessary 
 * Added `cvarsearch` command to lookup cvars by partial names
 
 ## New CVARs
@@ -82,9 +82,11 @@ videogame Urban Terror 4.x serie (http://www.urbanterror.info).
 
 ## Credits
 
-* [FrozenSand](https://github.com/Barbatos/ioq3-for-UrbanTerror-4)
+* [FrozenSand](https://github.com/Barbatos/ioq3-for-UrbanTerror-4) (for being so horribly incompetent to make this nesssary) 
 * [Rambetter](https://github.com/Rambetter)
 * [clearskies](https://github.com/anthonynguyen)
 * [mickael9](https://bitbucket.org/mickael9)
+* [Slackin] & RJC862003 for orginal snaps sv_fps unlock concept 
+* Daniele Pantaleone [https://github.com/danielepantaleone] for awesome sever centric fork of iourt
+* Pugbot.net for public testing 
 
-[![Build Status](https://travis-ci.org/danielepantaleone/ioq3-UrT.svg?branch=master)](https://travis-ci.org/danielepantaleone/ioq3-UrT)
