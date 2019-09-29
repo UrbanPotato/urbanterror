@@ -876,7 +876,7 @@ void CL_InitCGame(void) {
         Com_TouchMemory();
     }
 
-    // unlock snaps cvar so it can be tuned on our side.
+    // unlock snaps cvar so it can be tuned on our side. - touch for commit tracking
     if ((cvar = Cvar_FindVar("snaps"))) {
         Com_Printf("CL_InitCGame: removing CVAR_CHEAT flag from '%s' cvar\n", cvar->name);
         cvar->flags &= ~CVAR_CHEAT;
